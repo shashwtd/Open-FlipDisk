@@ -15,7 +15,8 @@ I started this because small flip-dot modules are hard to find, and the polished
 
 here's how the PCB looks:
 ![PCB front render](images/pcb_3d_render_front.png)
-![PCB back render](images/pcb_3d_render_back.png)
+![PCB back render|697](images/pcb_3d_render_back.png)
+![[final_schematic_sheet.jpg]]
 ![final PCB design](images/PCB_final_view.png)
 
 some CAD renders for module, made in fusion:
