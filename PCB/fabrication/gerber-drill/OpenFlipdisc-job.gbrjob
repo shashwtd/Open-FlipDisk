@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "10.0.3"
     },
-    "CreationDate": "2026-07-04T06:42:48+05:30"
+    "CreationDate": "2026-07-04T08:42:50+05:30"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -34,47 +34,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "OpenFlipdisc-F_Cu.gtl",
+      "Path": "OpenFlipdisc-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "OpenFlipdisc-B_Cu.gbl",
+      "Path": "OpenFlipdisc-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "OpenFlipdisc-F_Paste.gtp",
+      "Path": "OpenFlipdisc-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "OpenFlipdisc-B_Paste.gbp",
+      "Path": "OpenFlipdisc-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "OpenFlipdisc-F_Silkscreen.gto",
+      "Path": "OpenFlipdisc-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "OpenFlipdisc-B_Silkscreen.gbo",
+      "Path": "OpenFlipdisc-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "OpenFlipdisc-F_Mask.gts",
+      "Path": "OpenFlipdisc-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "OpenFlipdisc-B_Mask.gbs",
+      "Path": "OpenFlipdisc-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "OpenFlipdisc-Edge_Cuts.gm1",
+      "Path": "OpenFlipdisc-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

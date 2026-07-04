@@ -1,6 +1,6 @@
 Ref,Val,Package,PosX,PosY,Rot,Side
 "A1","RaspberryPi_Pico_W","RaspberryPi_Pico_Common_THT",78.640000,-63.125000,0.000000,top
-"C1","1000uF","CP_Radial_D8.0mm_P3.50mm",137.000000,-106.500000,180.000000,top
+"C1","1000uF","CP_Radial_D10.0mm_P5.00mm",137.000000,-106.750000,180.000000,top
 "C2","100uF","CP_Radial_D6.3mm_P2.50mm",145.182379,-106.000000,180.000000,top
 "C3","100uF","CP_Radial_D6.3mm_P2.50mm",153.182380,-106.000000,180.000000,top
 "C4","10uF","C_1206_3216Metric",164.025000,-88.500000,180.000000,top
@@ -23,10 +23,6 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "D3","D_PWR (green)","LED_D5.0mm",153.690000,-76.500000,0.000000,top
 "D4","D_ACT (red)","LED_D5.0mm",160.872500,-76.500000,0.000000,top
 "F1","Fuse T2A","Fuse_2920_7451Metric",114.612500,-106.000000,0.000000,top
-"H1","MountingHole","MountingHole_3.2mm_M3",71.750000,-65.000000,0.000000,top
-"H2","MountingHole","MountingHole_3.2mm_M3",71.750000,-126.750000,0.000000,top
-"H3","MountingHole","MountingHole_3.2mm_M3",176.373171,-126.750000,0.000000,top
-"H4","MountingHole","MountingHole_3.2mm_M3",176.380000,-65.000000,0.000000,top
 "J1","Barrel_Jack","BarrelJack_Horizontal",115.000000,-116.500000,90.000000,top
 "J2","Screw_Terminal_01x05","TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Horizontal",174.500000,-92.820000,90.000000,top
 "J3","Screw_Terminal_01x05","TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Horizontal",174.500000,-119.320000,90.000000,top
