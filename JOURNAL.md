@@ -260,7 +260,7 @@ here's how the 3D render looks for the same thing:
 i just finished with everything. turns out finding the parts was really expensive and I had to source everything from multiple vendors to make it all work. the PCB is coming from jlcpcb, some simple parts are coming from robu & robocraze, pi pico 2 w was cheaper on digikey and RECOM could only be found on digikey so those things are coming from there.. the enameled copper wire is coming from amazon.. and finally I have some screws (used for flip dot module to act as the solenoid base + pcb mounting) coming in from onlyscrews
 ![bom ss](images/bom_ss.png)
 
-> **total time spent: 34 hrs**
+> **total time spent: 37 hrs**
 
 ---
 
