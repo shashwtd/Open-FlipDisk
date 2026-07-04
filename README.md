@@ -23,6 +23,7 @@ some CAD renders for module, made in fusion:
 ![3x3 module render](images/3x3_module_CAD.png)
 
 this is my first rough 3D printed draft 3x3 grid:
+
 ![first 3D printed draft](images/first-3d-printed-draft.png)
 
 the bill of materials for this project can be found [here](bill_of_materials.csv)

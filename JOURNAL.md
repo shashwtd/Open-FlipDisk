@@ -7,7 +7,7 @@ I was thinking maybe I could make a gameboy type controller but render everythin
 
 I also some some cool switches on robu (easily accessible online hardware store) few days ago so maybe i can use that for a joystick???
 
-screenshot_flipdot_outpost_project_list
+![screenshot_flipdot_outpost_project_list](images/screenshot_flipdot_outpost_project_list.png)
 
 **9:58 PM:**
 Okay, before i start, i decided maybe i should look for the parts i wanna use and the key part was the flip dot display itself, I looked it up, but couldn't find it anyhwere. i saw lots of videos and stuff but the purchase part was tricky.
@@ -40,7 +40,7 @@ I tried to collect and review every single resource I could find that could be h
 [https://pierremuth.wordpress.com/2021/02/17/flipping-dots-fast/](https://pierremuth.wordpress.com/2021/02/17/flipping-dots-fast/)
 
 a demonstration image which helped me understand the module better
-![[rough_demo_flipdisc.png]]
+![rough demo flipdisc](images/rough_demo_flipdisc.png)
 by this time, i had a good understanding of what to do and realised i can actually do this. 
 
 **08:24 AM**
@@ -53,7 +53,7 @@ I found a reference single flip disc module case online, made a 3x3 verison of i
 
 **10:30 AM:**
 I wasn't able to get my prints last night, but they just arrived and here's how it looks: 
-![[first-3d-printed-draft.png]]
+![first 3d printed draft](images/first-3d-printed-draft.png)
 this was a simple print, but it has some flaws...
 
 - the discs collide with each other in some scenarios
@@ -72,7 +72,7 @@ I played around with it for quite a bit.. i tried to find nails that could possi
 
 **12:20 PM:**
 I did some work on CAD, and made this one singular module for the flipdisc. this is a perfected design that im totally satisfied with... here's an attached image:
-![[single_module_flipdisk.png]]
+![single module flipdisk](images/single_module_flipdisk.png)
 I decided to go with this cuz it has the following features:
 
 - the electromagnet base holes are designed for M3 screws, the kind which is very available in the market + perfect for something like this
@@ -81,7 +81,7 @@ I decided to go with this cuz it has the following features:
 - the screw hole has a base on the side where we can superglue it maybe? for better hold
 
 Once this singular module was done, I decided to make a 3x3 version alongside this
-![[3x3_module_CAD.png]]
+![3x3 module CAD](images/3x3_module_CAD.png)
 
 > **total time spent: 14 hrs**
 
@@ -90,7 +90,7 @@ Once this singular module was done, I decided to make a 3x3 version alongside th
 
 **10:00 PM:**
 today, I spent some of my time trying to make the electromagnet work. I've never really made an electromagnet but know how one works or atleast have some basic idea... i went shopping yesterday for some hardware components, there's a big market here in bangalore with a lot of items... I went there and got some electromagnets, some nails, a dc adapter, a dc female jack.. while i was there, i also bought some copper wire for this project
-![[trying_electromagnets.png]]
+![trying electromagnets](images/trying_electromagnets.png)
 I felt like i had the basic components to test how an electromagnet would work and immediately got to work.. there was something wrong and I realised very late that instead of enamelled copper wire i accidentally got bare copper wire which would make the circuit short and nothing would work except the nail getting heated..
 
 > **total time spent: 15 hrs**
@@ -113,7 +113,7 @@ the one problem i still face is:
 - how do i find a bearing or something of the same material that connects them
 
 ideally i want something U shaped, or i could connect parts to make it as such and wrap the coil around it.. the biggest issue is still where to source these parts.
-![[working_em_hanging.png]]
+![working em hanging](images/working_em_hanging.png)
 
 > **total time spent: 17 hrs**
 
@@ -164,9 +164,9 @@ good morning, woke up pretty late, but I do somewhat have a plan to work on now.
 
 **02:24 PM:**
 schematics update!!!
-![[Pasted image 20260702050139.png|548]]
-![[Pasted image 20260702050143.png|322]]
-![[Pasted image 20260702050146.png|322]]
+![pasted image 20260702050139](images/Pasted%20image%2020260702050139.png)
+![pasted image 20260702050143](images/Pasted%20image%2020260702050143.png)
+![pasted image 20260702050146](images/Pasted%20image%2020260702050146.png)
 i started out with making the power & extension system work and this is what i've done so far..
 
 
@@ -177,7 +177,7 @@ i started out with making the power & extension system work and this is what i'v
 ### July 2nd, 2026: 
 
 **02:34 AM:**
-![[Pasted image 20260702135133.png]]
+![pasted image 20260702135133](images/Pasted%20image%2020260702135133.png)
 added 5 of _TB6612FNG_ to use as a dual H bridge. we can use this to swap the polarity of the current for the flip discs (it's a very important component)
 
 with these 5 chips, and 2 outputs each, we have 10 matrix lines roughly that can be used to work with a 5x5 grid of individual flip dot modules... Its built-in flyback diodes absorb the coil's kickback, so no external diodes needed. (yay)
@@ -188,34 +188,34 @@ i think I'll go to bed after this, pretty tired now..
 i woke up pretty late, but decided to lock back in.. one of the main problems i had is i did not have enough space on my sheet so i would probably need to reorganize a lot of things to make sure i can fit everything in just one sheet. i dont want to make it too complicated with multiple schematic sheets tbh...
 
 i decided to organize all the stuff thereafter and this is what we have now:
-![[i made more progress.png]]
+![i made more progress](images/i%20made%20more%20progress.png)
 
 this looks pretty clean.. but I still need to add a lot more things and need to do some wiring on the schematic side before we move to assigning the footprints and moving forward with pcb design
 
 **3:13 PM:**
 okay, everything on the schematic is done now.. i added some things extra, increased the page size and had to do some reorganizing again before i move on cuz there was not enough space left to make it all work together... this is how the scehmatic turned out to be...
-![[finised_uncategorized_scehmatic.png]]
+![finised uncategorized scehmatic](images/finised_uncategorized_scehmatic.png)
 im gonna take just a lil more time to organize before i move on (i like those blue lines & labels)
 
 **3:32 PM:**
 decided to take some time to categorize things, and place them in text boxes
 the schematic sheet is looking clean now (wohooo)
-![[final_scehmatic.png]]
+![final scehmatic](images/final_scehmatic.png)
 
 **04:16 PM:**
-footprints are now assigned. kicad recently made some updates to the footprint library so i had some trouble finding the exact footprint i needed on J2 & J3 but after some research, looking around, I decided on another footprint which is pretty much the same thing from the new lib ![[footprints_slected_view.png]]
+footprints are now assigned. kicad recently made some updates to the footprint library so i had some trouble finding the exact footprint i needed on J2 & J3 but after some research, looking around, I decided on another footprint which is pretty much the same thing from the new lib ![footprints slected view](images/footprints_slected_view.png)
 next step is the PCB design......
 
 **06:28 PM:**
 currently doing the PCB placement
-![[initial_pcb_placement.png]]
+![initial pcb placement](images/initial_pcb_placement.png)
 
 **09:32 PM:** 
 didn't do much after last journal, now back to working on the PCB~!!!!
 
 **11:06 PM:**
 done with the part placement, everything looks and feels right.. the resistors and some capacitors actually had wayy bigger footprints for no apparent reason so I had to go back, review them, find a size that works and had to update them again.. same issue for fuse. we had a fuse case instead of the SMD fuses.. switching to this saved so much space and makes the board look wayy cleaner + its not as hassle bcs we dont need to replace it if something goes wrong, it can fix on its own
-![[Pasted image 20260702230617.png]]
+![pasted image 20260702230617](images/Pasted%20image%2020260702230617.png)
 (pcb view ^^^)
 
 > **total time spent: 30.5 hours**
@@ -226,11 +226,11 @@ done with the part placement, everything looks and feels right.. the resistors a
 
 **01:05 AM:**
 routing is completed now.. im now facing issues with DRC and thats pretty much it. other than that all is done and the wires are laid out
-![[Pasted image 20260703010642.png]]
+![pasted image 20260703010642](images/Pasted%20image%2020260703010642.png)
 
 **02:09 AM:**
 done with the PCB finally.. all the drc errors have been resolved 
-![[Pasted image 20260703021939.png]]
+![pasted image 20260703021939](images/Pasted%20image%2020260703021939.png)
 
 > **total time spent: 32.5 hrs**
 
@@ -251,13 +251,14 @@ this is a PCB, it's not the main thing in this project. the main thing is the fl
 **04:27 AM:**
 finally done with everything on the PCB end.. there were some placement misalignment issues as well that i fixed, nothing problematic but helps with my OCD, anyways.. I also did some silkscreen work on the PCB.. i realised im not the best person at drawing things so I decided to make something which resonates with the project. the silkscreen you see is a flip dot display grid with a smiley face on it.. its made using small discs, some filled some empty.. signifying a flip dot display
 here's how the final PCB looks:
-![[PCB_final_view.png]]here's how the 3D render looks for the same thing:
-![[pcb_3d_render_front.png]]
-![[pcb_3d_render_back.png]]
+![PCB final view](images/PCB_final_view.png)
+here's how the 3D render looks for the same thing:
+![pcb 3d render front](images/pcb_3d_render_front.png)
+![pcb 3d render back](images/pcb_3d_render_back.png)
 
 **5:56 PM:**
 i just finished with everything. turns out finding the parts was really expensive and I had to source everything from multiple vendors to make it all work. the PCB is coming from jlcpcb, some simple parts are coming from robu & robocraze, pi pico 2 w was cheaper on digikey and RECOM could only be found on digikey so those things are coming from there.. the enameled copper wire is coming from amazon.. and finally I have some screws (used for flip dot module to act as the solenoid base + pcb mounting) coming in from onlyscrews
-![[bom_ss.png]]
+![bom ss](images/bom_ss.png)
 
 > **total time spent: 34 hrs**
 
