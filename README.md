@@ -15,8 +15,8 @@ I started this because small flip-dot modules are hard to find, and the polished
 
 here's how the PCB looks:
 ![PCB front render](images/pcb_3d_render_front.png)
-![PCB back render|697](images/pcb_3d_render_back.png)
-![[final_schematic_sheet.jpg]]
+![PCB back render](images/pcb_3d_render_back.png)
+![final schematic sheet](images/final_schematic_sheet.jpg)
 ![final PCB design](images/PCB_final_view.png)
 
 some CAD renders for module, made in fusion:
@@ -27,4 +27,4 @@ this is my first rough 3D printed draft 3x3 grid:
 
 ![first 3D printed draft](images/first-3d-printed-draft.png)
 
-the bill of materials for this project can be found [here](bill_of_materials.csv)
+the bill of materials for this project can be found [here](BOM.csv)
