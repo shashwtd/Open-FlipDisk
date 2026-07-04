@@ -1,0 +1,46 @@
+Item,Qty,URL,Cost,Notes
+"PCB fabrication, 2-layer black board",5,https://jlcpcb.com/,$8.80,"5 bare boards"
+"JLCPCB Economy SMT assembly",2,https://jlcpcb.com/,$34.58,"2 boards assembled, smd only"
+"JLCPCB order subtotal before shipping",1,https://jlcpcb.com/,$43.38,
+"JLCPCB shipping",1,https://jlcpcb.com/,$23.40,
+,,,,
+10uF 1206 ceramic capacitor,2,https://www.lcsc.com/product-detail/C13585.html,included,
+22uF 1206 ceramic capacitor,2,https://www.lcsc.com/product-detail/C12891.html,included,
+0.1uF 0805 ceramic capacitor,26,https://www.lcsc.com/product-detail/C49678.html,included,
+SS34 Schottky diode SMC,2,https://www.lcsc.com/product-detail/C154551.html,included,
+SS14 Schottky diode SMA,2,https://www.lcsc.com/product-detail/C2480.html,included,
+2A resettable PTC fuse 2920,3,https://www.lcsc.com/product-detail/C369176.html,included,
+10k 0805 resistor,2,https://www.lcsc.com/product-detail/C17414.html,included,
+330R 0805 resistor,4,https://www.lcsc.com/product-detail/C17630.html,included,
+TB6612FNG SSOP-24 motor driver,10,https://www.lcsc.com/product-detail/C88224.html,included,
+,,,,
+Raspberry Pi Pico 2 W,2,https://www.digikey.in/en/products/detail/raspberry-pi/SC1633/25862726,$13.90,"cheaper on digikey"
+RECOM R-78E5.0-1.0 switching regulator,2,https://www.digikey.in/en/products/detail/recom-power/R-78E5-0-1-0/4930585,$7.59,"couldn't find on Indian hardware stores, hence using digikey"
+DigiKey shipping,1,https://www.digikey.in/,$12.60,
+,,,,
+40x1 female socket header 2.54mm,3,https://robocraze.com/products/40x1-female-berg-strip?variant=40192367689881,$0.28,"for pico socket"
+40x1 male pin header 2.54mm,1,https://robocraze.com/products/40x1-pin-2-54mm-pitch-male-berg-strip?variant=43046522650848,$0.06,"for debug header"
+5mm red through-hole LED pack,1,https://robocraze.com/products/5mm-red-led-pack-of-11?variant=40192389480601,$0.14,
+5mm green through-hole LED pack,1,https://robocraze.com/products/5mm-green-led-pack-of-10?variant=40192507412633,$0.16,
+6x6x5mm tactile switch pack,1,https://robocraze.com/products/4-pins-dip-momentary-square-tactile-push-button-switch-10-pieces-6x6x5mm?variant=43223713874144,$0.17,
+12V 2A regulated adapter,2,https://robocraze.com/products/12-volt-2-amp-power-adapter-ac-to-dc?variant=43483624145120,$3.70,
+74HC595 DIP-16 shift register,6,https://robocraze.com/products/8-bit-serial-to-parallel-shift-register-ic-74hc595?variant=43267980787936,$0.94,
+Robocraze shipping,1,https://robocraze.com/,$0.51,
+,,,,
+Degson 5-pin 5.08mm pluggable terminal block,4,https://robu.in/product/degson-5-pin-5-08-mm-pitch-pluggable-type-pcb-terminal-block/,$1.60,
+AISHI 1000uF 25V radial electrolytic capacitor,2,https://robu.in/product/ers1em102g16ot-aishi-1000uf-25v-%C2%B120-plugind10xl16mm-aluminum-electrolytic-capacitors-leaded-rohs/,$0.21,
+Rubycon 100uF 35V radial electrolytic capacitor,4,https://robu.in/product/35zlh100mefct16-3x11-rubycon-100uf-35v-%C2%B120-plugind6-3xl11mm-aluminum-electrolytic-capacitors-leaded-rohs/,$0.30,
+DC JACK-005,5,https://robu.in/product/dc-jack-005/,$0.12,
+16-pin DIP IC socket base,10,https://robu.in/product/16-pin-dip-ic-socket-base-adaptor-pack-of-5/,$0.55,
+Robu shipping,1,https://robu.in/,$1.05,
+,,,,
+34 AWG enamelled copper wire 200m,6,https://www.amazon.in/gp/product/B0BXJQQ6DQ,$31.44,"for electromagnets; one spool covers roughly 9-10 flip dots"
+M3 x 10mm female-female standoff spacer,20,https://onlyscrews.in/products/m3-x-10mm-female-to-female-brass-with-nickel-plating-hex-threaded-standoff-spacer?variant=50163185549625,$0.84,"for electromagnetic base"
+M3 x 6mm hex socket head screw,20,https://onlyscrews.in/products/m3-x-6mm-hex-allen-socket-head-high-tensile12-9-black-oxide-screw-dia-3mm-length-6mm?variant=51700343406905,$0.38,"for electromagnetic base"
+M3 x 25mm Phillips pan head screw,70,https://onlyscrews.in/products/m3-x-25mm-phillips-pan-head-mild-steel-with-zinc-blue-plating-screw-dia-3mm-length-25mm?variant=52636566716729,$0.65,"for electromagnetic base"
+OnlyScrews shipping,1,https://onlyscrews.in/,$1.56,
+,,,,
+Robocraze visible cart subtotal,,,$5.45,""
+Robu cart subtotal,,,$2.78,""
+DigiKey cart total,,,$34.09,""
+"Known project subtotal",,,$145.53,""
