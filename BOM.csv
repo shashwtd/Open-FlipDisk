@@ -1,22 +1,22 @@
 Item,Qty,URL,Cost,Notes
-"PCB fabrication, 2-layer black board",5,https://jlcpcb.com/,$8.80,"5 bare boards"
-"JLCPCB Economy SMT assembly",2,https://jlcpcb.com/,$34.58,"2 boards assembled, smd only"
-"JLCPCB order subtotal before shipping",1,https://jlcpcb.com/,$43.38,
+"PCB fabrication, 2-layer black board",3,https://jlcpcb.com/,$5.28,
+"JLCPCB Economy SMT assembly",2,https://jlcpcb.com/,$46.38,"2 boards assembled, smd only"
+"JLCPCB order subtotal before shipping",1,https://jlcpcb.com/,$51.66,
 "JLCPCB shipping",1,https://jlcpcb.com/,$23.40,
 ,,,,
-10uF 1206 ceramic capacitor,2,https://www.lcsc.com/product-detail/C13585.html,included,
-22uF 1206 ceramic capacitor,2,https://www.lcsc.com/product-detail/C12891.html,included,
-0.1uF 0805 ceramic capacitor,26,https://www.lcsc.com/product-detail/C49678.html,included,
-SS34 Schottky diode SMC,2,https://www.lcsc.com/product-detail/C154551.html,included,
-SS14 Schottky diode SMA,2,https://www.lcsc.com/product-detail/C2480.html,included,
-2A resettable PTC fuse 2920,3,https://www.lcsc.com/product-detail/C369176.html,included,
-10k 0805 resistor,2,https://www.lcsc.com/product-detail/C17414.html,included,
-330R 0805 resistor,4,https://www.lcsc.com/product-detail/C17630.html,included,
-TB6612FNG SSOP-24 motor driver,10,https://www.lcsc.com/product-detail/C88224.html,included,
+10uF 1206 ceramic capacitor,5,https://www.lcsc.com/product-detail/C13585.html,included,
+22uF 1206 ceramic capacitor,10,https://www.lcsc.com/product-detail/C12891.html,included,
+0.1uF 0805 ceramic capacitor,70,https://www.lcsc.com/product-detail/C49678.html,included,
+SS34 Schottky diode SMC,5,https://www.lcsc.com/product-detail/C154551.html,included,
+SS14 Schottky diode SMA,5,https://www.lcsc.com/product-detail/C2480.html,included,
+2A resettable PTC fuse 2920,6,https://www.lcsc.com/product-detail/C369176.html,included,
+4.7uH shielded power inductor,9,https://www.lcsc.com/product-detail/C48496.html,included,
+10k 0805 resistor,5,https://www.lcsc.com/product-detail/C17414.html,included,
+330R 0805 resistor,10,https://www.lcsc.com/product-detail/C17630.html,included,
+AP63205WU-7 buck regulator,5,https://www.lcsc.com/product-detail/C2071056.html,included,
+TB6612FNG SSOP-24 motor driver,25,https://www.lcsc.com/product-detail/C88224.html,included,
 ,,,,
-Raspberry Pi Pico 2 W,2,https://www.digikey.in/en/products/detail/raspberry-pi/SC1633/25862726,$13.90,"cheaper on digikey"
-RECOM R-78E5.0-1.0 switching regulator,2,https://www.digikey.in/en/products/detail/recom-power/R-78E5-0-1-0/4930585,$7.59,"couldn't find on Indian hardware stores, hence using digikey"
-DigiKey shipping,1,https://www.digikey.in/,$12.60,
+Raspberry Pi Pico 2 W with header,2,https://robu.in/product/raspberry-pi-pico-2-w-with-header/,$21.26,"from robu, 911rs per piece"
 ,,,,
 40x1 female socket header 2.54mm,3,https://robocraze.com/products/40x1-female-berg-strip?variant=40192367689881,$0.28,"for pico socket"
 40x1 male pin header 2.54mm,1,https://robocraze.com/products/40x1-pin-2-54mm-pitch-male-berg-strip?variant=43046522650848,$0.06,"for debug header"
@@ -41,6 +41,5 @@ M3 x 25mm Phillips pan head screw,70,https://onlyscrews.in/products/m3-x-25mm-ph
 OnlyScrews shipping,1,https://onlyscrews.in/,$1.56,
 ,,,,
 Robocraze visible cart subtotal,,,$5.45,""
-Robu cart subtotal,,,$2.78,""
-DigiKey cart total,,,$34.09,""
-"Known project subtotal",,,$145.53,""
+Robu cart subtotal,,,$24.04,""
+"Known project subtotal",,,$139.42,""
