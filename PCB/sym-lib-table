@@ -1,3 +1,4 @@
 (sym_lib_table
 	(version 7)
+	(lib (name "OpenFlipdisc_EasyEDA") (type "KiCad") (uri "${KIPRJMOD}/pcb_assets/AP63205WU-7/OpenFlipdisc_EasyEDA.kicad_sym") (options "") (descr ""))
 )

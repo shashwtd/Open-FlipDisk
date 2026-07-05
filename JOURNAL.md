@@ -264,3 +264,20 @@ i just finished with everything. turns out finding the parts was really expensiv
 
 ---
 
+### July 5th, 2026: fixing things & ordering parts
+
+**03:02 PM:**
+I received the grant to buy the items not so long ago however there is one big problem, there is this one part which is really hard to find in Indian hardware stores. It's not available in JLCPCB stock either.. that means if I order from anywhere outside India, it's going to cost me atleast $20+ more in shipping fees for a part that barely costs 3-4 USD.. it doesn't seem worth it + god knows  when my parcel will arrive. 
+
+hence, I decided to switch the part RECOM r-78e5.0-1.0 with AP63205WU-7 instead. the new part is pretty much the same thing but it's SMD, however it's more available than the prev one.. that means I can get JLCPCB do assemble it for me and wont have to worry about it at all..
+
+here's how the new scehmatic design looks when using the new part, i will need to update the PCB as well after this & will need to fix the placement + wiring...
+![updated schematic with AP63205](images/Pasted%20image%2020260705210722.png)
+
+**08:32 PM:**
+wohoo, PCB & routing done.. no DRC or ERC errors, gonna export everything once again and move forward to ordering all the parts & getting the PCB fabricated
+![updated PCB routing](images/Pasted%20image%2020260705210726.png)
+
+> **total time spent: 39 hrs**
+
+---

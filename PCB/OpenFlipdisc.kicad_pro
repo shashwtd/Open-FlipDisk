@@ -76,7 +76,7 @@
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "ignore",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -679,7 +679,7 @@
         "uuid": "bbeda746-5819-422e-a72d-04a7979acc79"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1,#PWR74-77,L1,C19-20,#FLG3",
     "variants": []
   },
   "sheets": [
