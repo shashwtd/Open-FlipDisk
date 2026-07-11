@@ -281,3 +281,44 @@ wohoo, PCB & routing done.. no DRC or ERC errors, gonna export everything once a
 > **total time spent: 39 hrs**
 
 ---
+
+### July 10th, 2026: I start assembling things
+
+**03:20 AM:**
+hieee, it was my birthday today but anyways, im kinda free now so ive been working on the hardware stuff. i decided to pick up my open flipdisk pcb and do some work on it...
+![multiple PCBs](images/multiple_pcbs.png)
+this is how the bare board looks. pretty good ngl. i had them assemble the SMD components beforehand bcs there is no way i could have done it myself
+
+**10:20 PM:**
+did lots of soldering, mounted parts, installed everything. i accidentally switched my solder tip to a precise one, and it was not as strong but it got stuck so i kinda wasted 2 hours in getting it out and being able to work again but anyways. all good... here's how it turned out:
+![assembled PCB](images/pcb_soldered_and%20allat.jpeg)
+
+**11:30 PM:**
+since i had fixed my solder tip and was able to actually get it working properly, I decided to kind of touch up on all the places ive soldered and make sure they're well done properly!!
+![soldered PCB back](images/pcb_soldered_back.jpeg)
+yay
+
+> **total time spent: 42 hours**
+
+---
+
+### July 11th, 2026: debugging + firmware
+
+**03:00 AM:**
+so what's happening is, after spending quite some time I figured out the firmware stuff and all that, installed something basic to test, and what happens is if i plug in the usb c it works, the lights blink and everything but if i just connect the DC, i see nothing happen. this is BAD!!!
+im not sure whats going wrong and the biggest issue is I don't even have a multimeter or something to test this out and review what's breaking. ive ordered one, it should arrive by morning, see you then!
+![lights blinking with USB power](images/light_blikning_with_usb_power.jpeg)
+(lights blinking with usb power ^^)
+
+**11:02 AM:**
+good morning, multimeter arrived, I did some testing, checked all the power supply and everything and tbh it took me quite some time to figure out all the different modes in multimeter.. however, I was able to pinpoint the problem, the thing is, the pi pico's pin 39 was not connected to the PCB for some reason even tho I did solder everything. I decided to just try soldering it again properly and it worked and the thing blinks with even dc power now!! 
+
+i checked the voltage & connection lines and it's all good man
+
+![assembled Open-FlipDisc PCB](images/cool_pcb_image.jpeg)
+(a cool picture of my PCB)
+
+> **total time spent: 45 hours**
+
+---
+

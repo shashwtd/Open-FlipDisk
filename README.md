@@ -13,6 +13,9 @@ I started this because small flip-dot modules are hard to find, and the polished
 - JLCPCB SMD assembly for the SMD parts
 - Through-hole parts, Pico, regulator, connectors, and mechanical hardware installed manually
 
+![assembled Open-FlipDisc PCB](images/cool_pcb_image.jpeg)
+![assembled PCB](images/pcb_soldered_and%20allat.jpeg)
+
 here's how the PCB looks:
 ![PCB front render](images/pcb_3d_render_front.png)
 ![PCB back render](images/pcb_3d_render_back.png)
