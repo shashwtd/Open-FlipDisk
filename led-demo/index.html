@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenFlipDisc Simulator</title>
+<style>
+  body { background: #fff; font-family: sans-serif; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(5, 80px); justify-content: center; gap: 8px; margin-bottom: 24px; }
+  .sq { height: 80px; background: #ccc; }
+  .sq.on { background: #ffd400; }
+  .sq.off { background: #f0f0f0; }
+  button { padding: 6px 12px; margin: 0 4px 4px 0; border: 1px solid #bbb; border-radius: 4px; background: #f7f7f7; cursor: pointer; }
+  button:hover { background: #eee; }
+  button.active { background: #ffd400; border-color: #d4b000; }
+</style>
+</head>
+<body>
+  <h1>OpenFlipDisc Simulator</h1>
+  <div class="grid" id="grid"></div>
+  <div class="bar" id="bar"><button id="connect">Connect</button></div>
+  <p>
+    <label><input type="radio" name="speed" value="700"> Slow</label>
+    <label><input type="radio" name="speed" value="350" checked> Normal</label>
+    <label><input type="radio" name="speed" value="150"> Fast</label>
+  </p>
+
+<script>
+  const ACTIVE_ROWS = [2, 3, 4];  // R2-R4 are wired
+  const ACTIVE_COLS = [0, 1, 2];  // C0-C2 are wired
+  const stepMs = () => Number(document.querySelector('input[name="speed"]:checked').value);  // animation step from the Slow/Normal/Fast radios
+
+  const PATTERNS = { 'All on': '111111111', X: '101010101', Plus: '010111010' };
+  const RING = [0, 1, 2, 5, 8, 7, 6, 3];
+  const one = i => Array.from({ length: 9 }, (_, j) => (j === i ? '1' : '0')).join('');
+  const ANIMATIONS = {
+    Chase: k => one(RING[k % RING.length]),
+    Wave: k => ['100100100', '010010010', '001001001', '010010010'][k % 4],
+    Sparkle: () => { const s = Array(9).fill('0'); for (let n = 0; n < 3; n++) s[Math.floor(Math.random() * 9)] = '1'; return s.join(''); },
+  };
+
+  const $ = id => document.getElementById(id);
+  const frame = Array.from({ length: 5 }, () => Array(5).fill(0));
+  const cells = ACTIVE_ROWS.flatMap(r => ACTIVE_COLS.map(c => [r, c]));  // the 9 wired squares, row by row
+  const squares = [];
+  const encoder = new TextEncoder();
+  let port = null, writer = null, timer = null, sending = false, queued = null;
+
+  // ---- display ----
+  function show(lit) {
+    for (const row of frame) row.fill(0);
+    for (const [r, c] of lit) frame[r][c] = 1;
+    squares.forEach((sq, i) => sq.classList.toggle('on', !!frame[Math.floor(i / 5)][i % 5]));
+    send('F' + frame.flat().join(''));
+  }
+  const bits = s => cells.filter((_, i) => s[i] === '1');
+
+  for (let r = 0; r < 5; r++) {
+    for (let c = 0; c < 5; c++) {
+      const sq = document.createElement('div');
+      sq.className = 'sq';
+      if (!(ACTIVE_ROWS.includes(r) && ACTIVE_COLS.includes(c))) sq.classList.add('off');
+      else {
+        sq.addEventListener('pointerenter', () => { stop(); show([[r, c]]); });
+        sq.addEventListener('pointerleave', () => { if (!timer) show([]); });
+      }
+      $('grid').append(sq); squares.push(sq);
+    }
+  }
+
+  // ---- buttons ----
+  function stop() {
+    clearTimeout(timer); timer = null;
+    document.querySelectorAll('button.active').forEach(b => b.classList.remove('active'));
+  }
+  function play(button, step) {
+    stop(); button.classList.add('active');
+    let k = 0;
+    const tick = () => { show(bits(step(k++))); timer = setTimeout(tick, stepMs()); };
+    tick();
+  }
+  function addButton(label, onClick) {
+    const b = document.createElement('button');
+    b.textContent = label;
+    b.addEventListener('click', () => onClick(b));
+    $('bar').append(b);
+  }
+  for (const [label, pattern] of Object.entries(PATTERNS)) addButton(label, () => { stop(); show(bits(pattern)); });
+  for (const [label, step] of Object.entries(ANIMATIONS)) {
+    addButton(label, b => (b.classList.contains('active') ? (stop(), show([])) : play(b, step)));
+  }
+  addButton('Off', () => { stop(); show([]); });
+
+  // ---- USB serial to the board ----
+  async function send(line) {
+    queued = line;  // only the newest frame matters
+    if (sending || !writer) return;
+    sending = true;
+    while (queued) {
+      const next = queued; queued = null;
+      try { await writer.write(encoder.encode(next + '\n')); } catch (e) { break; }
+    }
+    sending = false;
+  }
+  async function drain(p) {  // read and drop anything the board prints
+    try { const reader = p.readable.getReader(); for (;;) { if ((await reader.read()).done) break; } } catch (e) {}
+  }
+  async function connect(auto) {
+    if (!('serial' in navigator)) return;
+    try {
+      port = auto ? (await navigator.serial.getPorts())[0] : await navigator.serial.requestPort();
+      if (!port) return;
+      await port.open({ baudRate: 115200 });
+      try { await port.setSignals({ dataTerminalReady: true, requestToSend: true }); } catch (e) {}
+      writer = port.writable.getWriter();
+      drain(port);
+      $('connect').hidden = true;
+      send('F' + frame.flat().join(''));
+    } catch (e) { port = null; writer = null; }
+  }
+  $('connect').addEventListener('click', () => connect(false));
+  if ('serial' in navigator) {
+    navigator.serial.addEventListener('disconnect', () => { port = null; writer = null; $('connect').hidden = false; });
+    connect(true);  // reconnects on its own if Chrome already allowed this board
+  } else {
+    $('connect').textContent = 'Open in Chrome';
+  }
+</script>
+</body>
+</html>
