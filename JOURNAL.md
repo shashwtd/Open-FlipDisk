@@ -322,3 +322,15 @@ i checked the voltage & connection lines and it's all good man
 
 ---
 
+### July 12th-16, 2026: figuring out the electromagnet
+
+over this period, i spent my time trying to get the solenoid part to work. i remodelled it, 3d printed a small 5x5 grid, an tried to prepare the solenoids so they can beheave and work like a u-shaped magnet. after a lot of effort, and doing 800+ rounds of copper wire on the iron nail, i was finally able to get one singular cell working. It didn't last very long because the singular module was loosely held, I tried to carry this forward to the other remaining cells yet it didn't quite work out as I expected. I did lots of research during this period and eventually came to the realisation that it needs a much more complex, tightly wrapped, more powerful magnet to make the disc beheave exactly as we're expecting. this is also why such parts are complicated to make. eventually I changed the plan to use a bigger version of the disc module but that didn't quite work out either because it needed more power and the PCB I designed couldn't manage that. 
+sorry for adding the journal later, i did not get a chance during the event to write this. 
+> **total time spent: 55 hours**
+
+### October 22nd, 2026: LED test grid
+I had to prepare the project for a demo, so I made a 3x3 LED breadboard circuit which can help me demonstrate the effort I spent on hte PCB was worth it and the matrix power distribution system worked. since I had a small breadboard lying around, I decided to ditch 2 row and 2 columns and made a breadboard circuit designed for 3x3 ie- 9 LEDs i wired it all up, wrote a custom firmware, and a custom web app which can be useed to control the PCB when its connected to the computer. and luckily, evething worked out well and the LED demo worked as intended. I did not get a chance to showcase the custom firmware and the web app i built for this in the youtube video, but i got the approval regardless that the PCB works without a flaw. attaching some images here:
+![led test grid top](images/led_test_grid_top.webp)
+![led test grid side](images/led_test_grid_side.webp)
+
+> **total time spent: 58 hours**
